@@ -515,11 +515,6 @@ a {
     transform: translate(8px, 0px);
   }
 
-  .logo:before {
-    height: 2.1rem;
-    transform: translate(-10px, 1px);
-  }
-
   .header__nav__links {
     color: white;
     font-size: 18px;
