@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Miltos Doulgeris - Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div class="content">
+      <!--Header-->
+      <header class="header">
+        <nav class="header__nav">
+          <button class="link-to-button logo" onClick="scrollToTop()"
+            >MD</button
+          >
+          <div class="header__nav__links-wrapper">
+            <button
+              class="link-to-button header__nav__links"
+              id="about"
+              onClick="scrollToSection(this.id)"
+              >About</button
+            >
+            <button
+              class="link-to-button header__nav__links"
+              id="projects"
+              onClick="scrollToSection(this.id)"
+              >Projects</button
+            >
+            <button
+              class="link-to-button header__nav__links"
+              id="contact"
+              onClick="scrollToSection(this.id)"
+              >Contact</button
+            >
+          </div>
+        </nav>
+      </header>
+      <div class="header-shadow"></div>
+      <!--Hero section-->
+      <div class="hero-container">
+        <div class="hero__content-wrapper">
+          <div>
+            <p class="hero__name-text"
+              >Hello, I am <span class="name-text">Miltos Doulgeris</span>, a</p
+            >
+            <h2 class="hero__title-text">Web developer and Designer</h2>
+          </div>
+          <p class="hero-text"
+            >with experience in making modern, responsive websites using the
+            latest frameworks and technologies</p
+          >
+          <a
+            class="hero__contact-button"
+            href="https://www.linkedin.com/in/miltos-doulgeris"
+            >CONTACT ME</a
+          >
+        </div>
+      </div>
+      <!--About section-->
+      <div class="about" style="display: none"></div>
+      <div class="about__wrapper">
+        <h1 class="about-title">About me</h1>
+        <p class="about-text">
+          I am a <span class="bold">front-end web developer</span> and
+          undergraduate at the EECS department of the University of Thessaly in
+          Volos.<br /><br />
+          My strongest skills currently lie in <span class="bold">HTML</span>,
+          <span class="bold">CSS</span>,
+          <span class="bold">Javascript</span> and the
+          <span class="bold">C</span> language, although I am always learning
+          new things and expanding that list. I am also familiar with
+          <span class="bold">React JS</span>, <span class="bold">jQuery</span>,
+          <span class="bold">SCSS</span>, <span class="bold">SQL</span> and have
+          used <span class="bold">Figma</span>,
+          <span class="bold">Trello</span> and <span class="bold">Git</span> for
+          my personal projects. <br /><br />
+          I am passionate about being part of ambitious projects and widening my
+          skillset through them.<br /><br />
+          My personal interests include design, computer science, electronics,
+          music production, movies and books.
+        </p>
+      </div>
+      <!--Projects section-->
+      <div class="projects" style="display: none"></div>
+      <div class="main__wrapper">
+        <!--Technologies grid-->
+        <div class="grid__wrapper">
+          <div class="grid__content">
+            <h1 class="grid__header">Technologies:</h1>
+            <div class="grid__main-and-text-wrapper">
+              <div class="grid__main">
+                <div class="grid-item">
+                  <img
+                    class="grid-img html-img"
+                    src=".\img\html-white-text.png"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="grid-img css-img"
+                    src=".\img\css-white-text.png"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="grid-img js-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="grid-img react-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+                  />
+                </div>
+                <div class="grid-item">
+                  <img
+                    class="grid-img clang-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png"
+                  />
+                </div>
+              </div>
+              <div class="grid__separator"></div>
+            </div>
+          </div>
+        </div>
+        <!--Projects divs-->
+        <div class="main">
+          <div class="img__wrapper">
+            <img class="web-exp html-img" src=".\img\html-white-text.png" />
+            <img class="web-exp css-img" src=".\img\css-white-text.png" />
+            <img
+              class="web-exp js-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+            />
+          </div>
+
+          <div class="main__text-wrapper">
+            <h3 class="main__text-title">HTML, CSS, Javascript</h3>
+            <p class="main__text"
+              >I have used <span class="bold">HTML</span>,
+              <span class="bold">CSS</span> and
+              <span class="bold">Javascript</span> extensively for websites like
+              this one and other smaller projects. <br /><br />
+              I am familiar with Responsive CSS, Block Element Modifier, ES6
+              Syntax, OOP Principles, AJAX and more.</p
+            >
+          </div>
+        </div>
+        <div class="main odd">
+          <img class="main__image" src=".\img\eclass-dark.png" />
+          <div class="main__text-wrapper">
+            <h3 class="main__text-title">eClass Dark Theme</h3>
+            <p class="main__text">
+              Designed a dark theme for the eClass course management website. </p
+            ><a
+              href="https://github.com/miltosdoul/eclass-dark-theme"
+              class="icon-link"
+              ><i class="bi bi-github"><div class="overlay"></div></i
+            ></a>
+          </div>
+        </div>
+        <div class="main">
+          <div class="img__wrapper">
+            <img
+              class="web-exp react-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+            />
+            <img
+              class="web-exp wordpress-img"
+              src="https://image.flaticon.com/icons/png/512/174/174881.png"
+            />
+            <img
+              class="web-exp pgsql-img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+            />
+          </div>
+          <div class="main__text-wrapper">
+            <h3 class="main__text-title">Other technologies</h3>
+            <p class="main__text"
+              >I am familiar with the basics of languages and frameworks like
+              <span class="bold">React JS</span> (JSX, Props, Hooks),
+              <span class="bold">Node JS</span>,
+              <span class="bold">Wordpress</span>,
+              <span class="bold">PHP</span> and
+              <span class="bold">SCSS</span>.<br /><br />
+              I also have basic experience with
+              <span class="bold">PostgreSQL</span> and designing ER diagrams.<br /><br />
+              Lastly, I have used the
+              <span class="bold">C language</span> extensively for university
+              assignments like the implementation of a cache and a cache
+              replacement algorithm, and have attended data structures and
+              algorithms classes.</p
+            >
+          </div>
+        </div>
+      </div>
+      <!--Contact section-->
+      <div class="contact" style="display: none"></div>
+      <div class="contact-before"></div>
+      <div class="contact__wrapper">
+        <h1 class="contact__title">Contact</h1>
+        <div class="contact__link-wrapper">
+          <a
+            class="contact__link icon-link"
+            href="https://github.com/miltosdoul"
+            ><i class="bi bi-github contact__icon"></i
+          ></a>
+          <a
+            class="contact__link icon-link"
+            id="linkedin-link"
+            href="https://www.linkedin.com/in/miltos-doulgeris"
+            ><i class="bi bi-linkedin contact__link contact__icon"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-after"></div>
+      <!--Footer section-->
+      <footer class="footer"
+        ><p class="footer-text">Miltos Doulgeris, 2021</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
