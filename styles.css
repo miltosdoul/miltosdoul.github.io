@@ -133,7 +133,7 @@ a {
 }
 
 .hero-container {
-  background-image: url(https://images.pexels.com/photos/2397649/pexels-photo-2397649.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-image: url(img/hero-img.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
@@ -528,6 +528,11 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+  .header__nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .main,
   .main.odd {
     flex-direction: column;
